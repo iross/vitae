@@ -90,9 +90,9 @@
 
 % Defines the rSection environment for the large sections within the CV
 \newenvironment{rSection}[1]{ % 1 input argument - section name
-  \sectionskip
+ % \sectionskip
   %\textcolor[rgb]{0.188,0.337,0.549}{\large{\MakeUppercase{\bf #1}}} % Section title
-  \textcolor[rgb]{0.188,0.337,0.549}{\Large{\bf #1}} % Section title
+  \textcolor[rgb]{0.188,0.337,0.549}{\large{\bf #1}} % Section title
   \sectionlineskip
   \hrule % Horizontal line
   \begin{list}{}{ % List for each individual item in the section
@@ -117,12 +117,12 @@
    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
   }{
   \end{list}
-  \vspace{0.5em} % Some space after the list of bullet points
+  \vspace{0.1em} % Some space after the list of bullet points
 }
 
 % The below commands define the whitespace after certain things in the document - they can be \smallskip, \medskip or \bigskip
-\def\namesize{\huge} % Size of the name at the top of the document
+\def\namesize{\Large} % Size of the name at the top of the document
 \def\addressskip{\smallskip} % The space between the two address (or phone/email) lines
-\def\sectionlineskip{\medskip} % The space above the horizontal line for each section 
-\def\nameskip{\bigskip} % The space after your name at the top
-\def\sectionskip{\medskip} % The space after the heading section
+\def\sectionlineskip{\smallskip} % The space above the horizontal line for each section 
+\def\nameskip{\smallskip} % The space after your name at the top
+\def\sectionskip{\smallskip} % The space after the heading section
