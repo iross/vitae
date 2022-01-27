@@ -21,11 +21,11 @@
 
 \documentclass{resume} % Use the custom resume.cls style
 
-\usepackage[left=0.75in,top=0.5in,right=0.75in,bottom=0.5in]{geometry} % Document margins
+\usepackage[left=0.65in,top=0.4in,right=0.65in,bottom=0.4in]{geometry} % Document margins
 
 \name{Ian A. Ross} % Your name
-\address{21 N. Butler St., Apt. 602; Madison, WI; 53703} % Your address
-\address{608.561.1729 \\ ian.ackerman.ross@gmail.com} % Your phone number and email
+%\address{21 N. Butler St., Apt. 602; Madison, WI; 53703} % Your address
+%\address{608.561.1729 \\ ian.ackerman.ross@gmail.com} % Your phone number and email
 
 \begin{document}
 
@@ -49,46 +49,45 @@
 
 {\bf University of Wisconsin-Madison} \hfill {\em August, 2013} \\ 
 \/PhD in Physics (Focus: Experimental High Energy Particle Physics) \\
-Overall GPA: 3.6
-
+%Overall GPA: 3.6
 {\bf Rose-Hulman Institute of Technology} \hfill {\em May, 2008} \\
 B.S. in Physics and Mathematics\\
-Language/Literature Minor\\
-Overall GPA: 3.93
+%Language/Literature Minor\\
+%Overall GPA: 3.93
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
-
-\begin{rSection}{Technical Experince}
-
-Utilized local Condor computing framework to batch-submit analysis jobs, to find
-hundred of high-purity signals in billions upon billions of stored proton
-collisions.
-
-Helped develop and maintain two separate analysis frameworks (primarily written
-in C++ and python) which were used in dozens of published results.
-
-Produce Monte Carlo simulation samples, dispatching jobs across thousands of
-computing nodes across the globe.
-
-Contributed to framework of statistical methodolgy to set upper limits on the
-size of anmalous couplings between fundamental particles.
-
-Helped create, organize, and manage secondary datasets stored on local HDFS,
-used to drastically reduce time needed to run analyses.
-
-Maintained C++ software suite for real-time monitoring, communication, and
-testing of experiment-critical hardware.
-
-\end{rSection}
+%
+%\begin{rSection}{Technical Experince}
+%
+%Utilized local Condor computing framework to batch-submit analysis jobs, to find
+%hundred of high-purity signals in billions upon billions of stored proton
+%collisions.
+%
+%Helped develop and maintain two separate analysis frameworks (primarily written
+%in C++ and python) which were used in dozens of published results.
+%
+%Produce Monte Carlo simulation samples, dispatching jobs across thousands of
+%computing nodes across the globe.
+%
+%Contributed to framework of statistical methodolgy to set upper limits on the
+%size of anmalous couplings between fundamental particles.
+%
+%Helped create, organize, and manage secondary datasets stored on local HDFS,
+%used to drastically reduce time needed to run analyses.
+%
+%Maintained C++ software suite for real-time monitoring, communication, and
+%testing of experiment-critical hardware.
+%
+%\end{rSection}
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Experience}
+\begin{rSection}{Selected Experience}
 
 %-----RA
 %-----Research main points:  analytical skills, working independently, working in a
@@ -96,19 +95,69 @@ testing of experiment-critical hardware.
 % Large-scale data processing, stastical methods
 %-----Support main points: Software, hardware, pattuple stuff?
 
-\begin{rSubsection}{Epic}{August 2013-Present}{Technical Services, MyChart
+% TODO: Focus on ML-y algorithm-y, high-impact, noticeable, etc.
+
+\begin{rSubsection}{University of Wisconsin-Madison}{November
+    2014-Present}{Systems Integration Developer}{Center for High Throughput
+    Computing, CS Department}
+\item xDD (formerly GeoDeepDive) - Lead Developer - A text-datamining digital library of
+    scientific literature
+    \begin{list}{}{\leftmargin=1.5em} 
+      \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+      \item Design, develop, maintain, and manage system to acquire
+          documents from partnered publishers, process via CHTC resources,
+          and provide tools to explore, analyze, and mine data.
+      \item Integrate a wide variety of languages and technologies:
+        \renewcommand\labelitemi{$\cdot$}
+        \begin{itemize}{}{\leftmargin=1.25em} 
+          \itemsep -0.3em \vspace{-0.3em} % Compress items in list together for aesthetics
+          \item Elasticsearch, MongoDB, postgresql for data storage
+          \item Node.js for public researcher-facing API
+          \item python, bash, HTCondor for processing documents and
+          connecting components
+        \end{itemize}
+      %\item Big huge pile of documents and novel ways to explore it.
+      %\item Collaborations?
+      %\item Workshop?
+      %\item Funded by NSF ICER 1343760
+    \end{list}
+\item COSMOS - Developer - An AI-powered technical assistant that extracts and assimilates data from heterogeneous sources to accelerate analytics and knowledge discovery. 
+    \begin{list}{}{\leftmargin=1.5em} 
+      \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+      \item Helped create and integrate software components to:
+        \renewcommand\labelitemi{$\cdot$}
+          \begin{itemize}{}{\leftmargin=1.25em}
+          \item Annotate sections of a PDF document
+          \item Train a machine learning model to visually categorize sections
+              of a document
+          \item Extract recognized tables, figures, and text sections
+          \item Leverage third-party utilities to recognize text and convert tables
+              to columnar data objects
+          \item Enable context- and keyword-based recall of relevant objects
+          within the literature
+          \end{itemize}
+      %\item Covid stuff?
+      %\item Harvard stuff?
+      \item Integrated components to enable researchers to search the COVID-19 literature for
+          research-relevant figures, tables, and text by deploying on
+          $>$50,000 documents recognized to be related within xDD
+      %\item Funded by ASKE HR00111990013
+    \end{list}
+\end{rSubsection}
+
+\begin{rSubsection}{Epic}{October 2013-October 2014}{Technical Services, MyChart
 Application}{Verona, WI}
 \item Collaborated with teams at six different healthcare organizations to
 deploy, configure, and maintain web and mobile applications used by
 hundreds of thousands of healthcare patients.
 \item Developed and maintained utilities to help streamline customer support,
 improve service uptime, and ease complex troubleshooting.
-\item Customized patient-facing websites to meet healthcare organizations'
-specifications using HTML, CSS, and Javascript.  
+%\item Customized patient-facing websites to meet healthcare organizations'
+%specifications using HTML, CSS, and Javascript.  
 \end{rSubsection}
 
 \begin{rSubsection}{University of Wisconsin - Compact Muon Solenoid Group}{June
-2009-Present}{Research Assistant}{Madison, WI and CERN, Geneva, Switzerland}
+2009-August 2013}{Research Assistant}{Madison, WI and CERN, Geneva, Switzerland}
 
 \item Lead analyst, ``Measurement of ZZ production cross-section measurement and
 search for anomalous couplings in the four lepton final state''
@@ -118,12 +167,12 @@ search for anomalous couplings in the four lepton final state''
       couplings.
     \end{list}
 
-\item Lead analyst, ``Search for a high mass Higgs boson in the $ZZ\rightarrow
-2\ell2\tau$ channel''
-    \begin{list}{}{\leftmargin=1.5em} 
-      \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
-      \item First-ever observations of events in the $2\ell2\tau$ final state.
-    \end{list}
+%\item Lead analyst, ``Search for a high mass Higgs boson in the $ZZ\rightarrow
+%2\ell2\tau$ channel''
+%    \begin{list}{}{\leftmargin=1.5em} 
+%      \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+%      \item First-ever observations of events in the $2\ell2\tau$ final state.
+%    \end{list}
 
 \item Member of the Higgs to ZZ to four lepton ``golden channel'' search team
     \begin{list}{}{\leftmargin=1.5em} 
@@ -133,31 +182,33 @@ search for anomalous couplings in the four lepton final state''
 
 \item Online Software Expert, Regional Calorimeter Trigger detector subsystem
 
-\item Coordinated usage of tau leptons in Standard Model analyses
+% TODO: more computing-y, less physics-y
+
+%\item Coordinated usage of tau leptons in Standard Model analyses
 
 \end{rSubsection}
 
 %-----Main points: total quitter
-\begin{rSubsection}{University of Wisconsin - McDermott Group}{January 2009-June 2010}{Research Assistant}{Madison, WI}
-\item Designed and constructed cryogenic housing for nuclear magnet
-    resonance instrument.
-\end{rSubsection}
+%\begin{rSubsection}{University of Wisconsin - McDermott Group}{January 2009-June 2010}{Research Assistant}{Madison, WI}
+%\item Designed and constructed cryogenic housing for nuclear magnet
+    %resonance instrument.
+%\end{rSubsection}
 
 %------TA
 %------Main points: communication, interaction with students, ???
-\begin{rSubsection}{University of Wisconsin Physics Department}{August
-2008-January 2009}{Teaching Assistant}{Madison, WI}
-\item Instructed non-science students in art- and music-inspired physics
-    lab studies
-\item Won ``Teaching Assisitant Rookie of the Year award, based on
-    student feedback
-\end{rSubsection}
-
-%\begin{rSubsection}{Argonne National Laboratory, Nuclear Engineering
-%Division}{March 2008-August 2008}{Research associate}{Lemont, IL}
-%\item Developed, tested, and implemented algorithm improvements for real-time
-%tracking of radioactive sources, substatially improving spatial resolution.
+%\begin{rSubsection}{University of Wisconsin Physics Department}{August
+%2008-January 2009}{Teaching Assistant}{Madison, WI}
+%\item Instructed non-science students in art- and music-inspired physics
+    %lab studies
+%\item Won ``Teaching Assisitant Rookie of the Year award, based on
+    %student feedback
 %\end{rSubsection}
+
+\begin{rSubsection}{Argonne National Laboratory, Nuclear Engineering
+Division}{March 2008-August 2008}{Research associate}{Lemont, IL}
+\item Developed, tested, and implemented algorithm improvements for real-time
+tracking of radioactive sources, substatially improving spatial resolution.
+\end{rSubsection}
 
 
 \end{rSection}
@@ -166,87 +217,87 @@ search for anomalous couplings in the four lepton final state''
 %	TECHNICAL STRENGTHS SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Technical Strengths}
-
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-    {\bf Programming Languages (Fluent):} & Python, C++, C\# \\
-    {\bf Proficient in:} & Ruby, R, Matlab \\
-    {\bf Tools:} & vim, git, cvs, bash/zsh, tmux, ROOT data analysis software \\
-\end{tabular}
-
-\end{rSection}
+%\begin{rSection}{Technical Strengths}
+%
+%\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+%    {\bf Programming Languages (Fluent):} & Python, C++, C\# \\
+%    {\bf Proficient in:} & Ruby, R, Matlab \\
+%    {\bf Tools:} & vim, git, cvs, bash/zsh, tmux, ROOT data analysis software \\
+%\end{tabular}
+%
+%\end{rSection}
 
 %----------------------------------------------------------------------------------------
 %	Published results
 %----------------------------------------------------------------------------------------
-
-\begin{rSection}{Physics Results}
-
-\begin{rSubsection}{Publications, primary analyst}{}{}{}
-\item ``Measurement of ZZ production cross-section measurement and search for
-anomalous couplings in the four lepton final state at 8 TeV''
-    \begin{list}{}{\leftmargin=1.5em} 
-      \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
-      \item Publication pending
-    \end{list}
-\item ``Measurement of ZZ production cross-section measurement and search for
-anomalous couplings in the four lepton final state''
-    \begin{list}{}{\leftmargin=1.5em} 
-      \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
-      \item Published in JHEP 1301 (2013) 063
-    \end{list}
-\item ``Search for a high mass Higgs boson in the $ZZ\rightarrow2\ell2\tau$
-channel''
-    \begin{list}{}{\leftmargin=1.5em} 
-      \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
-      \item Published in JHEP 1203 (2012) 081
-    \end{list}
-\end{rSubsection}
-
-\begin{rSubsection}{Publications, contributing analyst}{}{}{}
-\item ``Observation of a new boson at a mass of 125 GeV with the CMS experiment
-at the LHC''
-    \begin{list}{}{\leftmargin=1.5em} 
-      \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
-      \item Published in Phys. Lett. B716 (2012) 30-61
-    \end{list}
-\item ``Combined results of searches for the standard model Higgs boson in pp
-collections at s=7 TeV''
-    \begin{list}{}{\leftmargin=1.5em} 
-      \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
-      \item Published in Phys. Lett. B710 (2012) 26-48
-    \end{list}
-\item ``Search for the standard model Higgs boson in the decay channel H to ZZ
-to 4 leptons in pp collisions at s=7 TeV''
-    \begin{list}{}{\leftmargin=1.5em} 
-      \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
-      \item Published in Phys.Rev. Lett. 108 (2012) 111804
-    \end{list}
-\item ``Measurement of the Inclusive W and Z Production Cross Sections in pp
-Collisions at s=7 TeV''
-    \begin{list}{}{\leftmargin=1.5em} 
-      \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
-      \item Published in JHEP 1110 (2011) 132
-    \end{list}
-\end{rSubsection}
-
-\begin{rBlankSubsection}{Full list of authored articles as CMS collaborator:   
-http://bit.ly/129N7AJ}{}{}{}
-\end{rBlankSubsection}
-
-\begin{rSubsection}{Public Talks}{}{}{}
-\item ``Diboson Physics in the Compact Muon Solenoid''
-    \begin{list}{}{\leftmargin=1.5em} 
-      \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
-      \item LHC Days at Split Conference, 4.October.2012. Split, Croatia
-    \end{list} \item ``Measurement of ZZ Production Cross Section in CMS''
-    \begin{list}{}{\leftmargin=1.5em} 
-      \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
-      \item Lepton-Photon Conference, 23.August.2011. Mumbai, India (Poster)
-    \end{list}
-\end{rSubsection}
-
-\end{rSection}
+%
+%\begin{rSection}{Physics Results}
+%
+%\begin{rSubsection}{Publications, primary analyst}{}{}{}
+%\item ``Measurement of ZZ production cross-section measurement and search for
+%anomalous couplings in the four lepton final state at 8 TeV''
+%    \begin{list}{}{\leftmargin=1.5em} 
+%      \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+%      \item Publication pending
+%    \end{list}
+%\item ``Measurement of ZZ production cross-section measurement and search for
+%anomalous couplings in the four lepton final state''
+%    \begin{list}{}{\leftmargin=1.5em} 
+%      \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+%      \item Published in JHEP 1301 (2013) 063
+%    \end{list}
+%\item ``Search for a high mass Higgs boson in the $ZZ\rightarrow2\ell2\tau$
+%channel''
+%    \begin{list}{}{\leftmargin=1.5em} 
+%      \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+%      \item Published in JHEP 1203 (2012) 081
+%    \end{list}
+%\end{rSubsection}
+%
+%\begin{rSubsection}{Publications, contributing analyst}{}{}{}
+%\item ``Observation of a new boson at a mass of 125 GeV with the CMS experiment
+%at the LHC''
+%    \begin{list}{}{\leftmargin=1.5em} 
+%      \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+%      \item Published in Phys. Lett. B716 (2012) 30-61
+%    \end{list}
+%\item ``Combined results of searches for the standard model Higgs boson in pp
+%collections at s=7 TeV''
+%    \begin{list}{}{\leftmargin=1.5em} 
+%      \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+%      \item Published in Phys. Lett. B710 (2012) 26-48
+%    \end{list}
+%\item ``Search for the standard model Higgs boson in the decay channel H to ZZ
+%to 4 leptons in pp collisions at s=7 TeV''
+%    \begin{list}{}{\leftmargin=1.5em} 
+%      \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+%      \item Published in Phys.Rev. Lett. 108 (2012) 111804
+%    \end{list}
+%\item ``Measurement of the Inclusive W and Z Production Cross Sections in pp
+%Collisions at s=7 TeV''
+%    \begin{list}{}{\leftmargin=1.5em} 
+%      \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+%      \item Published in JHEP 1110 (2011) 132
+%    \end{list}
+%\end{rSubsection}
+%
+%\begin{rBlankSubsection}{Full list of authored articles as CMS collaborator:   
+%http://bit.ly/129N7AJ}{}{}{}
+%\end{rBlankSubsection}
+%
+%\begin{rSubsection}{Public Talks}{}{}{}
+%\item ``Diboson Physics in the Compact Muon Solenoid''
+%    \begin{list}{}{\leftmargin=1.5em} 
+%      \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+%      \item LHC Days at Split Conference, 4.October.2012. Split, Croatia
+%    \end{list} \item ``Measurement of ZZ Production Cross Section in CMS''
+%    \begin{list}{}{\leftmargin=1.5em} 
+%      \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+%      \item Lepton-Photon Conference, 23.August.2011. Mumbai, India (Poster)
+%    \end{list}
+%\end{rSubsection}
+%
+%\end{rSection}
 
 %----------------------------------------------------------------------------------------
 
