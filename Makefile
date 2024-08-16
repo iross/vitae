@@ -1,2 +1,2 @@
 pdf:
-	pdflatex iross_resume.tex
+	pdflatex iross_cv.tex
